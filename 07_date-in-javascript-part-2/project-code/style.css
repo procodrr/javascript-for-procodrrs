@@ -1,0 +1,14 @@
+form {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 12px;
+}
