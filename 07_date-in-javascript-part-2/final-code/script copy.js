@@ -16,11 +16,9 @@ console.log(myDate.toLocaleDateString('en-GB', { dateStyle: 'medium' }))
 console.log(myDate.toLocaleDateString('en-GB', { dateStyle: 'short' }))
 
 function getFullDayName(date) {
-  const formattedDate = date.toLocaleDateString('en-GB', { dateStyle: 'full' })
-  return formattedDate.split(',')[0]
+  return date.toLocaleDateString('en-GB', { weekday: 'long' })
 }
 
 function getFullMonthName(date) {
-  const formattedDate = date.toLocaleDateString('en-GB', { dateStyle: 'full' })
-  return formattedDate.split(' ')[2]
+  return date.toLocaleDateString('en-GB', { month: 'long' })
 }
